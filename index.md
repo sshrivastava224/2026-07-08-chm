@@ -456,7 +456,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 {% elsif site.carpentry == "hpcc" %}
                 <a href="{{ site.hpcc_pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
                 {% else %}
-                <a href="{{ site.pre_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
+                <a href="https://forms.gle/fEtN2mKr8K7NuX6MA" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
                 {% endif %}
             </div>
         </div>
@@ -480,7 +480,7 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
                 {% elsif site.carpentry == "hpcc" %}
                 <a href="{{ site.hpcc_post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Pre-Workshop Survey</a>
                 {% else %}
-                <a href="{{ site.post_survey }}{{ site.github.project_title }}" class="btn btn-primary">Fill Out the Post-Workshop Survey</a>
+                <a href="https://forms.gle/eC8GJfbruMmP2B776" class="btn btn-primary">Fill Out the Post-Workshop Survey</a>
                 {% endif %}
             </div>
         </div>
@@ -515,6 +515,8 @@ of code below the Schedule `<h2>` header below with
 <div class="card mb-2">
   <h5 class="card-header">Schedule</h5>
   <div class="card-body">
+    {% include custom-schedule.html %}
+    {% comment %}
     {% assign schedule_file = site.carpentry | append: '/schedule.html' %}
     {% if isOfficial %}
     {% include {{ schedule_file }} %}
@@ -522,6 +524,7 @@ of code below the Schedule `<h2>` header below with
     This workshop is teaching a lesson in <a href="https://carpentries-incubator.org/">The Carpentries Incubator</a>.
     Please check <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for a list of lesson sections and estimated timings.
     {% endif %}
+    {% endcomment %}
 
     {% comment %}
     Edit/replace the text above if you want to include a schedule table.
