@@ -516,6 +516,7 @@ of code below the Schedule `<h2>` header below with
   <h5 class="card-header">Schedule</h5>
   <div class="card-body">
     {% include custom-schedule.html %}
+    
     {% comment %}
     {% assign schedule_file = site.carpentry | append: '/schedule.html' %}
     {% if isOfficial %}
