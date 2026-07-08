@@ -16,9 +16,6 @@ title: Setup for R workshop
 | R                     | See install instructions below. |                       | Linux, MacOS, Windows |                                                  | 
 | RStudio               | [Download RStudio](https://posit.co/download/rstudio-desktop/#download)                                | [RStudio Cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf)                      | Linux, MacOS, Windows |                                                  | 
 
-```{r include-setup-spreadsheet, child="files/setup-spreadsheet.md"}
-```
-
 ```{r include-setup-r, child="files/setup-r.md"}
 ```
 
