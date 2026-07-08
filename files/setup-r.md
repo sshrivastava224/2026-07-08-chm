@@ -11,7 +11,7 @@
   install RStudio. After installing both programs, you will need to install
   some specific R packages within RStudio. Follow the instructions below for
   your operating system, and then follow the instructions to install
-  **`tidyverse`** and **`RSQLite`**.
+  **`tidyverse`**.
 
 #### Windows
 
@@ -106,9 +106,9 @@ You can [uninstall older versions of R][uninstall-r] if you wish to do so.
 - Once it's installed, open RStudio to make sure it works and you don't get any
   error messages.
 
-- After installing R and RStudio, you need to install the `tidyverse` and
-  `RSQLite` packages. Start RStudio by double-clicking the icon and then type:
-  `install.packages(c("tidyverse", "RSQLite"))`. You can also do this by going to Tools -> Install Packages and
+- After installing R and RStudio, you need to install the `tidyverse`
+  package. Start RStudio by double-clicking the icon and then type:
+  `install.packages(c("tidyverse"))`. You can also do this by going to Tools -> Install Packages and
   typing the names of the packages you want to install, separated by a comma.
 
 [uninstall-r]: https://cran.r-project.org/bin/windows/base/rw-FAQ.html#How-do-I-UNinstall-R_003f
