@@ -592,7 +592,7 @@ If you do not use Zoom for your online workshop, edit the file `_includes/instal
 These are the installation instructions for the tools used during the workshop.
 {% endcomment %}
 
-{% assign setup_file = site.carpentry | append: '/setup.html' %}
+{% assign setup_file = files/setup-overview.md %}
 {% if isOfficial %}
   {% include {{ setup_file }} %}
 {% elsif site.carpentry == "incubator" %}
